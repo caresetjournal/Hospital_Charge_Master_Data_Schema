@@ -21,7 +21,7 @@ The Hospital ChargeMaster data will be released as a Comma Delimited (CSV) in ac
 
 * CCN - CCN of the hospital (allows for one file to detail several hospitals or sub-facilities)
 * NPI - NPI of the hospital (allows for one file to detail several hospitals or sub-facilities)
-* HPID - "0" if this is the root ChargeMaster, otherwise this is the HPID of the payor 
+* HPID - "master" if this is the Charge data is the "master", otherwise this is the HPID of the respective payer 
 * Charge_Code - The internally specified Charge Code
 * Charge_Code_Description - A short clinical description of the charge without abbreviations whenever possible
 * Code_Source - HCPCS/CPT/ICD Procedure/DRG 

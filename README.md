@@ -57,7 +57,7 @@ A JSON formatted file with the following contents:
 * Hospital_NPI_List - a JSON List of the NPI numbers of the hospitals included in the file
 
 
-### More information 
+## More information 
 If you are hospital data administrator and you would like to use this data format to release your own data, please look here
 [For Hospital Data Teams](https://github.com/docgraph/Hospital_Charge_Master_Data_Schema/blob/master/ForHospitalDataTeams.md)
 

@@ -57,47 +57,8 @@ A JSON formatted file with the following contents:
 * Hospital_NPI_List - a JSON List of the NPI numbers of the hospitals included in the file
 
 
-## Data Download Location
-
-Please place your chargemaster data download under the following url on your website
-
-https://yourhospitaldomain.com/chargemasterdata/
-
-If you have more than one EIN (and therefore need to release multiple chargemaster data file sets) then place them under numberic directories starting from 1 like so:
-
-https://yourhospitaldomain.com/chargemasterdata/1/
-
-https://yourhospitaldomain.com/chargemasterdata/2/
-
-....
-
-https://yourhospitaldomain.com/chargemasterdata/15/
-
-etc.
-
-
-## Rational
-
-* Why not JSON?
-
-* Why not Excel?
-
-* Why do you require MD5 files?
-
-* Why have the HPID field?
-
-* Why the EIN?
-Because we need to be able to have a top level identifier for your hospital as an entity. Large hospitals can have multiple CCN and NPI numbers, but the EIN is the highest level identifier for a given hospital.
-
-If you need to publish under two different EINs then you need to release two different chargemaster data files. But if you just have several NPI fields, then you can put evertything in a single chargemaster data release under one EIN. 
-
-Contrary to popular belief EINs are not private in healthcare and are defined as part of the public data released by CMS. They should be releasing that data "real soon now". Please be careful not to accidentally release a Social Security Number in the place of an EIN, because that is private information.  
-
-
-
-* Why not define this as a CSV Schema?
-There is a [CSV Schema](http://digital-preservation.github.io/csv-schema/csv-schema-1.1.html) that we could have used. However, many of the columns in our CSV specification need to be valid codes of one type or another (CCN, NPI, HCPCS, CPT, etc etc) and it was not immediately clear how you specify "valid NPI" or "valid HCPCS" in the CSV Schema. But we would welcome this as a contribution if someone can figure out a way to do that correctly or mostly correctly.
-
-
+### More information 
+If you are hospital data administrator and you would like to use this data format to release your own data, please look here
+[For Hospital Data Teams](https://github.com/docgraph/Hospital_Charge_Master_Data_Schema/blob/master/ForHospitalDataTeams.md)
 
 

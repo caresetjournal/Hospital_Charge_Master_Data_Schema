@@ -1,5 +1,6 @@
-# Hospital Charge Master Data Schema
-This document details the machine readable data structure of a hospital chargemaster data release, in compliance with CMS policy. 
+# DocGraph Hospital Charge Master Data Schema
+
+This document details a specific machine readable data structure of a hospital chargemaster data release, in compliance with CMS policy. 
 
 * This ReadMe can also be found on the [Hospital Charge Master Data Schema Github Project](https://github.com/docgraph/Hospital_Charge_Master_Data_Schema)
 * If you would like more help interpreting this data, please visit [hospitalpricedata.org](http://hospitalpricedata.org/)

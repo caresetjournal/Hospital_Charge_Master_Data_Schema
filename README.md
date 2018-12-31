@@ -1,20 +1,23 @@
 # Hospital Charge Master Data Schema
-Proposed data formats and best practices for the release of Hospital Charge Master Data.
+This document details the machine readable data structure of a hospital chargemaster data release, in compliance with CMS policy. 
 
-We want to keep this simple, so we are making a single short document.
-
-You can read more about the effort to develop this document at [hospitalpricedata.org](http://hospitalpricedata.org/)
+* This ReadMe can also be found on the [Hospital Charge Master Data Schema Github Project](https://github.com/docgraph/Hospital_Charge_Master_Data_Schema)
+* If you would like more help interpreting this data, please visit [hospitalpricedata.org](http://hospitalpricedata.org/)
+* If you would like to know more about what a Chargemaster is, [Wikipedia has an article on Chargemasters](https://en.wikipedia.org/wiki/Chargemaster)
+ 
 
 ## Core Files
 
-There are several files that should be released as part of the Hospital Chargemaster data release:
+There are several files that should be included released as part of this Hospital Chargemaster data release:
+
+* Chargemaster.README.md - A readme (possibly this one) that details the data structures found in the other files.
 * Chargemaster.csv - The actual Chargemaster data
 * Chargemaster.csv.MD5 - an MD5 file that should be updated everytime the Chargemaster file is updated
 * Chargemaster.metadata.json - JSON metadata for the Chargemaster 
 * Chargemaster.metadata.json.MD5 - an MD5 file that should be updated everytime the Chargemaster file updates
 
 ### Chargemaster.csv
-The Hospital ChargeMaster data will be released as a Comma Delimited (CSV) in accordance with [IETF RFC4180](https://tools.ietf.org/html/rfc4180) with the following columns structure.
+The Hospital ChargeMaster data will be released as a Comma Delimited (CSV) in accordance with [IETF RFC4180](https://tools.ietf.org/html/rfc4180) with the following columns structure:
 
 * CCN - CCN of the hospital (allows for one file to detail several hospitals or sub-facilities)
 * NPI - NPI of the hospital (allows for one file to detail several hospitals or sub-facilities)
@@ -29,18 +32,17 @@ The Hospital ChargeMaster data will be released as a Comma Delimited (CSV) in ac
 
 ### Chargemaster.csv.hash.SHA and Chargemaster.metadata.json.hash.SHA
 
-Run a command line shasum program to create this file. Something like 
+These files are hashes of the downloaded files so that you can be sure that what you downloaded is the same as what the hospital released. 
+
+To verify them run a command line shasum program to create a new hash. Something like 
 
 ```
-shasum Chargemaster.csv > Chargemaster.csv.hash.SHA
-shasum Chargemaster.csv > Chargemaster.csv.hash.SHA
+shasum Chargemaster.csv 
+shasum Chargemaster.metadata.json
 ```
 
-should work. This file will ensure that the spiders that will evitably regularly check to see if your chargemaster data has been updated will not constantly download the full chargemaster file over and over. 
+should work. If you are going to build a spider to repeatidly check to see if chargemaster files have changes
 
-If you would like to include other cryptographic hash functions for additional file integrity proofing, change the name of the hash extension, but keep the 'hash' in the file name. So Chargemaster.csv.hash.MD5 etc. 
-
-Although you are free to use additional hash functions, you must at least support the SHA-256 hash function. 
 
 ### Chargemaster.metadata.json
 
@@ -48,10 +50,11 @@ A JSON formatted file with the following contents:
 
 * Hospital_Name - The name of the hospital
 * Hospital_EIN - The EIN of the hospital
+* Data_Contact_Name - The first and last name of the person who manages the release of the chargemaster data
+* Data_Contact_Email - The email to contact regarding problems with the chargemaster data
 * Last_Update_DateTime - The [correct JSON DateTime](https://stackoverflow.com/a/15952652/144364) of the ChargeMasters last release
 * Hospital_CCN_List - a JSON List of CCN numbers of the hospitals included in the file
 * Hospital_NPI_List - a JSON List of the NPI numbers of the hospitals included in the file
-
 
 
 ## Data Download Location

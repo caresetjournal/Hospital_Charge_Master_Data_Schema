@@ -77,4 +77,4 @@ Of course, please do!
 
 ## Where to get help with this schema
 
-
+Start by submitting an issue here: https://github.com/docgraph/Hospital_Charge_Master_Data_Schema/issues

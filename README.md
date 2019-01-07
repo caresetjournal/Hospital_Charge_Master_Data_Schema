@@ -5,7 +5,7 @@ This document details a specific machine readable data structure of a hospital c
 * This ReadMe can also be found on the [Hospital Charge Master Data Schema Github Project](https://github.com/docgraph/Hospital_Charge_Master_Data_Schema)
 * If you would like more help interpreting this data, please visit [hospitalpricedata.org](http://hospitalpricedata.org/)
 * If you would like to know more about what a Chargemaster is, [Wikipedia has an article on Chargemasters](https://en.wikipedia.org/wiki/Chargemaster)
- 
+* This document honors the CMS requirement to release Chargemaster data in [Machine Readable Format](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/a11_current_year/s200.pdf) 
 
 ## Core Files
 

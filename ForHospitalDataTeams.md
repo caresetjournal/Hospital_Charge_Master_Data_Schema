@@ -26,13 +26,15 @@ etc.
 ### What counts as "Machine Readable" according to CMS?
 The CMS regulation specifically mentions the PDF does not count as machine readable. However, Machine Readable is defined by The Office of Management and Budgetment (OMB) [OMB Circular A-11, Part 6](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/a11_current_year/s200.pdf) as:
 
-*Machine Readable Format*. Format in a standard computer language (not English text) that can be read
+```
+Machine Readable Format. Format in a standard computer language (not English text) that can be read
 automatically by a web browser or computer system. (e.g., xml). Traditional word processing documents,
 hypertext markup language (HTML) and portable document format (PDF) files are easily read by humans
 but typically are difficult for machines to interpret. Other formats such as extensible markup language
 (XML), (JSON), or spreadsheets with header columns that can be exported as comma separated values
 (CSV) are machine readable formats. It is possible to make traditional word processing documents and
 other formats machine readable but the documents must include enhanced structural elements. 
+```
 
 This specifically states that Spreadsheets need to be converted to CSV in order to count as machine readable. 
 

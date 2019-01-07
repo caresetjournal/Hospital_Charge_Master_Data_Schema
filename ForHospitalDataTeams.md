@@ -36,9 +36,9 @@ but typically are difficult for machines to interpret. Other formats such as ext
 other formats machine readable but the documents must include enhanced structural elements. 
 ```
 
-This specifically states that Spreadsheets need to be converted to CSV in order to count as machine readable. 
+This specifically states that spreadsheets only count when they can be converted to CSV in order to count as machine readable. We simply require this demonstration upfront. 
 
-This parallels information from the Federal CIO website, which [specifically lists acceptable open standards](https://project-open-data.cio.gov/open-standards/). 
+This parallels information from the Federal CIO [Project Open Data website](https://project-open-data.cio.gov/principles/), which [specifically lists acceptable open standards](https://project-open-data.cio.gov/open-standards/). This notes that standards that require proprietary software are not open standards. 
 
 ### Should we put the data inside a zip file?
 

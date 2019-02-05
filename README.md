@@ -29,7 +29,7 @@ The Hospital ChargeMaster data will be released as a Comma Delimited (CSV) in ac
 * Code_Version - CPT is currently '4' ICD is currently '10' etc etc.
 * Code - The actual HCPCS or CPT or DRG etc etc
 * Price - The dollars and cents charged, without commas.. so 1500.00 not "1,500.00"
-* Price_Data - The Date this price was released in MM-DD-YYYY format (this is USA, after all)
+* Price_Date - The Date this price was released in MM-DD-YYYY format (this is USA, after all)
 
 ### Chargemaster.csv.hash.SHA and Chargemaster.metadata.json.hash.SHA
 
